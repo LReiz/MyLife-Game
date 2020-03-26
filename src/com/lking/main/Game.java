@@ -62,7 +62,7 @@ public class Game extends Canvas implements KeyListener, Runnable {
 	
 	public static String gameState = "GAME";
 	
-	public static int curCity = 2;
+	public static int curCity = 1;
 	public static int maxCity = 4;
 	
 	public static boolean cutScene1 = false;
@@ -218,7 +218,7 @@ public class Game extends Canvas implements KeyListener, Runnable {
 	}
 	
 	private void initFrame() {
-		JFrame frame = new JFrame("Pac-Man");
+		JFrame frame = new JFrame("MyLife");
 		frame.add(this);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
