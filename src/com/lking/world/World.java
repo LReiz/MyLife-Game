@@ -310,6 +310,11 @@ public class World {
 					Game.backgrounds.add(new Entity((xx)*World.TS, (yy)*World.TS, World.TS, World.TS, sprite));
 					continue;
 		
+				} else if(pixels[pixelAtual] == 0xFFFF8800) {	// Basket Ball
+					BufferedImage sprite = Game.spritesheetbg.getSprite(3*World.TS, 6*World.TS, World.TS, World.TS);
+					Game.backgrounds.add(new Entity((xx)*World.TS, (yy)*World.TS, World.TS, World.TS, sprite));
+					continue;
+		
 				} else if(pixels[pixelAtual] == 0xFF404040) {	// Television
 					for(int yl = 0; yl <= 1; yl++) {
 						for(int xl = 0; xl <= 1; xl++) {
